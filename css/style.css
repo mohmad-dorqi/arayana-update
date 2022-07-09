@@ -1,0 +1,145 @@
+
+@font-face {
+  font-family: 'vazer';
+  src: url('/font/Vazirmatn-RD-Light.ttf') format('truetype'),
+  url('/font/Vazirmatn-RD-Light.woff2')format('woff');
+}
+
+body{
+    font-family: 'vazer';
+      background-color: #fff;
+}
+.title1{
+    color: blue!important;
+}
+.select{
+    width: 150px;
+    
+}
+.form {
+    background-color:#F5F5F5;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 740px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color:  #000000;
+    font-family: 'vazer';
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #000000;
+    font-family:'vazer';
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #D9D9D9 ;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #110d0d ;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    height: 20px;
+    left: 100px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 92px;
+  }
+  
+ 
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #0a0a0a;
+    font-family: 'vazer';
+   
+    left: 95px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  .placeholder-second{
+    left: 120px;
+    
+  }
+  .placeholder-third{
+    left: 110px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #D9D9D9;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #110f10;
+  }
+  
+  .submit {
+    background-color: #1D3557;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+     outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }  
+
+  a{
+    color: #F9F2ED;
+    text-decoration: none;
+  }
