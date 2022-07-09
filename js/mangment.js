@@ -382,14 +382,11 @@ function showPerson() {
 }
 
 
- btnDeleteAll.addEventListener('click', async ()=>{
 
-   await  deleteallAM()
-   await deleteallPM()
-
-})
 function deleteallPM(){
 
+  try {
+    
     fetch(`https://aryana-f947e-default-rtdb.firebaseio.com/TakhasosPM.json`)
     .then(res => res.json())
     .then(data => {
@@ -404,11 +401,25 @@ function deleteallPM(){
             method: 'DELETE'
         }).then(res => {
 
+            if (res.status === 200) {
+
+                alert('حذف با موفقیت انجام شد ')
+               
+
+
+            } else {
+                alert('خطا در حذف اطلاعات لطفا مجددا سعی کنید')
+               
+            }
+
         })
 
      })
 
     })
+  } catch (error) {
+    
+  }
 
    
 
@@ -417,6 +428,7 @@ function deleteallPM(){
 function deleteallAM (){
 
 
+  try {
     fetch(`https://aryana-f947e-default-rtdb.firebaseio.com/TakhasosAM.json`)
     .then(res => res.json())
     .then(data => {
@@ -431,11 +443,25 @@ function deleteallAM (){
             method: 'DELETE'
         }).then(res => {
 
+
+            if (res.status === 200) {
+
+                alert('حذف با موفقیت انجام شد ')
+               
+
+
+            } else {
+                alert('خطا در حذف اطلاعات لطفا مجددا سعی کنید')
+               
+            }
         })
 
      })
 
     })
+  } catch (error) {
+    
+  }
   
 
 }
