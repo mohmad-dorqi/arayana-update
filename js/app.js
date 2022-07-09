@@ -144,7 +144,11 @@ function check() {
         alert('لطفا تخصص را انتخاب کنید')
 
     } else {
+      if(num===30){
+        alert('متاسفانه نوبتی برای فردا وجود ندارد')
+      }else{
         addPerson()
+      }
 
     }
 
@@ -172,7 +176,7 @@ async function addPerson() {
         .then(res => {
             if (res.status === 200) {
 
-                alert('اطلاعات با موفقیت ثبت شد')
+                alert(' نوبت شما با موفقیت ثبت شد لطفا فردا ساعت 9 به کلینیک مراجعه کنید ')
                 num++
                 clearInp()
 
